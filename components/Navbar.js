@@ -7,6 +7,7 @@ export default function Navbar () {
 
     const toggleNavbar = () => {
         setNavIsOpen(!navIsOpen);
+        console.log(!navIsOpen);
     }
     return (
         <StyledNavbar >
@@ -42,7 +43,38 @@ export default function Navbar () {
             </button>
             */}
 
-            
+            <div className="container">
+                <button 
+                  className={`toggle-container ${navIsOpen ? "show" : ""}`}
+                  onClick={toggleNavbar}
+                  >
+                  {/*If menu is open, it will be the "X" icon, otherwise just a clickable area behind the hamburger menu icon*/}
+                    <span className="button button-toggle"></span>
+                </button>
+                  
+                <nav className="nav">
+                    <Link href="/#Home">
+                        <a className="nav-item">Home</a>    
+                    </Link>
+                    <Link href="/#About">
+                        <a className="nav-item" >About</a>
+                    </Link>
+                    <Link href="/Blog">
+                        <a className="nav-item" >Blog</a>
+                    </Link>
+                    <Link href="/#Projects">
+                        <a className="nav-item">Projects</a>
+                    </Link>
+                    <Link href="/#Contact">
+                        <a className="nav-item">Contact</a>
+                    </Link>
+                    <Link href="/Resume-Anibal-Andrade.pdf">
+                        <a className="nav-item" target="_blank" alt="Resumé" >Resumé</a>
+                    </Link>
+                    
+                </nav>
+            </div>
+
         </StyledNavbar>
     )
 }
