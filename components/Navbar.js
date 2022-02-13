@@ -71,10 +71,10 @@ export default function Navbar () {
                   className={`toggle-container ${navIsOpen ? "open" : ""}`}
                   onClick={toggleNavbar}
                   >
-                    <span className=" button-toggle">-</span>
-                    <span className=" button-toggle">-</span>
-                    <span className=" button-toggle">-</span>
-                    <span className=" button-toggle">-</span>
+                    <span className=" button-toggle"></span>
+                    <span className=" button-toggle"></span>
+                    <span className=" button-toggle"></span>
+                    <span className=" button-toggle"></span>
                 </button>
             </div>
 

@@ -39,8 +39,8 @@ const StyledNavbar = styled.nav`
     }
     button.toggle-container {
       display: flex;
-      width: 40px;
-      height: 35px;
+      width: 35px;
+      height: 25px;
       position: relative;
       transform: rotate(0deg);
       transition: all .5s ease-in-out;
@@ -52,7 +52,7 @@ const StyledNavbar = styled.nav`
     button.toggle-container span {
       display: block;
       position: absolute;
-      height: 4px;
+      height: 2px;
       width: 100%;
       background: var(--outstanding-text);
       border-radius: 9px;
@@ -68,7 +68,9 @@ const StyledNavbar = styled.nav`
 
     button.toggle-container span:nth-child(2),
     button.toggle-container span:nth-child(3) {
-      top: 14px;
+      /* top: 14px; */
+      top: 50%;
+      transform: translateY(-50%);
     }
     button.toggle-container span:nth-child(4) {
       bottom: 0;  
