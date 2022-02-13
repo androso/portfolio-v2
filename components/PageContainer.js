@@ -42,6 +42,9 @@ export default function PageContainer({ footer, children, ...customMetaData }) {
 				)}
 			</Head>
             <Navbar />
+			<main>
+				{children}
+			</main>
             {footer && <Footer />}
 		</div>
 	);

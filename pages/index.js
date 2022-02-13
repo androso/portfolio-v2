@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import { PageContainer, Project } from "../components";
+import { PageContainer, Project, Hero} from "../components";
 import { GlobalStyle } from "../styles";
 
 export default function Home() {
@@ -9,6 +9,7 @@ export default function Home() {
 		<>
 			<GlobalStyle />
 			<PageContainer>
+				<Hero />
 			</PageContainer>
 		</>
 	);
