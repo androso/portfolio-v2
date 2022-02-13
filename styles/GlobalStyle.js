@@ -3,6 +3,8 @@ import Variables from "./variables";
 import Fonts from "./fonts";
 
 const GlobalStyle = createGlobalStyle`
+    ${Fonts};
+    ${Variables};
     html {
         box-sizing: border-box;
     }
@@ -18,8 +20,7 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
     }
 
-    ${Fonts}
-    ${Variables}
+    
 
     /* STYLES FOR THE BACKGROUND ANIMATION ;*/
     body {

@@ -31,8 +31,8 @@ const StyledNavbar = styled.nav`
   .nav {
     margin-right: 50px;
   } 
-  /* MOBILE STYLES */
 
+  /* MOBILE STYLES */
   @media (max-width: 650px) {
     .container {
       margin-right: 20px;
@@ -46,7 +46,7 @@ const StyledNavbar = styled.nav`
       transition: all .5s ease-in-out;
       cursor: pointer;
       background: none;
-      /* border: 1px solid red; */
+      
       border: none;
     }
     button.toggle-container span {
@@ -68,7 +68,6 @@ const StyledNavbar = styled.nav`
 
     button.toggle-container span:nth-child(2),
     button.toggle-container span:nth-child(3) {
-      /* top: 14px; */
       top: 50%;
       transform: translateY(-50%);
     }
@@ -90,8 +89,24 @@ const StyledNavbar = styled.nav`
     button.toggle-container.open span:nth-child(4) {
 
     }
-    .nav {
+    .nav.closed {
       display: none;
+    }
+    .container {
+      position: relative;
+    }
+    .nav {
+      margin: 0;
+      background-color: #15171A;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
   }
 
