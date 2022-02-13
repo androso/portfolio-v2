@@ -2,6 +2,17 @@ import { StyledNavbar } from "../styles";
 import Link from "next/link";
 import { useState } from "react";
 
+
+const links = [
+    {title: "Home", href: "#Home"},
+    {title: "About", href: "#About"},
+    {title: "Blog", href: "#Blog"},
+    {title: "Projects", href: "#Projects"},
+    {title: "Contact", href: "#Contact"},
+    {title: "Resumé", href: "/Resume-Anibal-Andrade.pdf", target: "_blank"},
+    
+]
+
 export default function Navbar () {
     const [navIsOpen, setNavIsOpen] = useState(null);
 
@@ -44,35 +55,27 @@ export default function Navbar () {
             */}
 
             <div className="container">
+                  
+                <div className="nav">
+                    {links.map(link => {
+                        return (
+                            <Link href={link.href}>
+                                <a className="nav-item" alt={link.title} target={link.target ? link.target : ""}>{link.title}</a>
+                            </Link>        
+                        )
+                    })}
+                    
+                </div>
+
                 <button 
-                  className={`toggle-container ${navIsOpen ? "show" : ""}`}
+                  className={`toggle-container ${navIsOpen ? "open" : ""}`}
                   onClick={toggleNavbar}
                   >
-                  {/*If menu is open, it will be the "X" icon, otherwise just a clickable area behind the hamburger menu icon*/}
-                    <span className="button button-toggle"></span>
+                    <span className=" button-toggle">-</span>
+                    <span className=" button-toggle">-</span>
+                    <span className=" button-toggle">-</span>
+                    <span className=" button-toggle">-</span>
                 </button>
-                  
-                <nav className="nav">
-                    <Link href="/#Home">
-                        <a className="nav-item">Home</a>    
-                    </Link>
-                    <Link href="/#About">
-                        <a className="nav-item" >About</a>
-                    </Link>
-                    <Link href="/Blog">
-                        <a className="nav-item" >Blog</a>
-                    </Link>
-                    <Link href="/#Projects">
-                        <a className="nav-item">Projects</a>
-                    </Link>
-                    <Link href="/#Contact">
-                        <a className="nav-item">Contact</a>
-                    </Link>
-                    <Link href="/Resume-Anibal-Andrade.pdf">
-                        <a className="nav-item" target="_blank" alt="Resumé" >Resumé</a>
-                    </Link>
-                    
-                </nav>
             </div>
 
         </StyledNavbar>
