@@ -6,7 +6,7 @@ const StyledNavbar = styled.nav`
   justify-content: flex-end;
   align-items: center;  
   max-height: 66px;
-  width: 100vw !important;
+  
   
   button.toggle-container {
     display: none;
@@ -32,11 +32,15 @@ const StyledNavbar = styled.nav`
 
   /* MOBILE STYLES */
   @media (max-width: 650px) {
-    .container {
-      margin-right: 20px;
+    
+    margin-right: 15px;
+    
+    .nav.open {
+      z-index: 10;
     }
     button.toggle-container {
       display: flex;
+      z-index: 10;
       width: 35px;
       height: 25px;
       position: relative;
