@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Hero() {
 	return (
 		<StyledHero className="container">
-                <Image className="landing__avatar" src={"/public/avatar-ivvana.png"} alt="Anibal Andrade" width="203px" height="203px"/>
+        <Image className="landing__avatar" src={"/avatar-ivvana.png"} alt="Anibal Andrade" width="203px" height="203px"/>
 				<img class="landing__avatar" src="/public/avatar-ivvana.png" alt="" />
 				<h1 class="landing__name title">Hey, I'm Anibal</h1>
 				<h2 class="landing__profession subtitle">
