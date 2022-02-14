@@ -5,11 +5,9 @@ const StyledNavbar = styled.nav`
   padding: 20px 0;
   justify-content: flex-end;
   align-items: center;  
+  max-height: 66px;
+  width: 100vw !important;
   
-
-  .container {
-    display: flex;
-  }
   button.toggle-container {
     display: none;
   }

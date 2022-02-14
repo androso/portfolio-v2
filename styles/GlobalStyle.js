@@ -45,7 +45,10 @@ const GlobalStyle = createGlobalStyle`
             background-position: 0% 50%;
         }
     }
-
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
     
 `;
 

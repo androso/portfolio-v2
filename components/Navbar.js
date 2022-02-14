@@ -22,7 +22,7 @@ export default function Navbar () {
     }
     return (
         <StyledNavbar >
-            <div className="container">
+            
                 <div className={`nav ${navIsOpen ? "open" : "closed"}`}>
                     {links.map(link => {
                         return (
@@ -43,7 +43,7 @@ export default function Navbar () {
                     <span className=" button-toggle"></span>
                     <span className=" button-toggle"></span>
                 </button>
-            </div>
+            
 
         </StyledNavbar>
     )
