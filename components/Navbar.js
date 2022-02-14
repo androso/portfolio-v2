@@ -26,7 +26,7 @@ export default function Navbar () {
                 <div className={`nav ${navIsOpen ? "open" : "closed"}`}>
                     {links.map(link => {
                         return (
-                            <Link href={link.href}>
+                            <Link href={link.href} key={link.title}>
                                 <a className="nav-item" alt={link.title} target={link.target ? link.target : ""}>{link.title}</a>
                             </Link>        
                         )

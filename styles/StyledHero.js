@@ -7,16 +7,17 @@ const StyledHero = styled.section`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-    .landing__avatar {
-	width: 203px;
-	border-radius: 50%;
+    
+    .avatar {
+        width: 203px;
+        border-radius: 50%;
     }
     .title {
         color: var(--outstanding-text);
         font-weight: 500;
         font-size: 2.66rem;
     }
-    .landing__profession {
+    .profession {
         color: var(--outstanding-shadow-text);
         margin-bottom: var(--sm-margin-bottom);
         font-weight: 400;
@@ -29,7 +30,8 @@ const StyledHero = styled.section`
         margin-bottom: var(--md-margin-bottom);
     }
     .blue-icon {
-        font-size: 25px;
+        width: 25px;
+        height: 25px;
         margin-left: 20px;
         cursor: pointer;
         color: var(--outstanding-shadow-text);
