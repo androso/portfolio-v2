@@ -47,12 +47,14 @@ const StyledHero = styled.section`
     .blue-icon.fa-chevron-down {
         color: #cccccc;
         font-size: 1.8rem;
+        transition: color .3s ease;
     }
     .blue-icon.fa-chevron-down:hover {
         color: var(--outstanding-text);
     }
     .blue-icon:hover {
         opacity: 1;
+        color: #93dfc8;
     }
 
 `;

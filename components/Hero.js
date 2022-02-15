@@ -6,8 +6,9 @@ import {
 	faLinkedin,
 	faGithub,
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faEnvelope, faChevronDown } from "@fortawesome/free-solid-svg-icons"
 import Image from "next/image";
+import Link from "next/link";
 
 const socialLinks = [
 	{
@@ -81,9 +82,9 @@ export default function Hero() {
 				
 			</div>
 			<div className="landing learn-more">
-				<a href="#about_me">
-					<i className="fas fa-chevron-down blue-icon"></i>
-				</a>
+				<Link href="#about_me">
+					<FontAwesomeIcon icon={faChevronDown} className="blue-icon"/>
+				</Link>
 			</div>
 		</StyledHero>
 	);

@@ -14,3 +14,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+div {
+  color: #93dfc8;
+}
