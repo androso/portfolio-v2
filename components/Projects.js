@@ -48,7 +48,10 @@ export default function Projects() {
 				<h3 className="projects__subtitle shadow-subtitle">Builders build, huh?</h3>
 				{projects.map((project) => {
 					return (
-						<Project project={project}/>
+						<Project 
+							key={project.title}
+							project={project}
+						/>
 					);
 				})}
 			</div>
@@ -77,7 +80,7 @@ function Project({ project }) {
 				<p className="project__description">{project.description}</p>
 				<p className="project__stack">
 					{project.stack.map((stack) => (
-						<span className="stack__item">{stack}</span>
+						<span className="stack__item" key={stack}>{stack}</span>
 					))}
 				</p>
 				<div className="project__links-container">
@@ -89,6 +92,7 @@ function Project({ project }) {
 								alt={extLink.title}
 								title={extLink.title}
 								className="blue-icon"
+								key={extLink.title}
 							>
 								{extLink.name === "Replit" ? (
 									<img id="replit-gra-icon" src={extLink.icon} />
