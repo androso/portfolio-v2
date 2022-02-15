@@ -1,15 +1,29 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import { PageContainer, Project, Hero} from "../components";
+import { PageContainer, Project, Hero, AboutMe} from "../components";
 import { GlobalStyle } from "../styles";
+import styled from "styled-components";
+
+const Separator = styled.hr`
+	border: none;
+	height: 2px;
+	background: var(--outstanding-shadow-text);
+	margin-bottom: 100px;
+	opacity: 0.2;
+`;
 
 export default function Home() {
 	return (
 		<>
 			<GlobalStyle />
 			<PageContainer>
-				<Hero />
+				<Hero 
+					title="Hey, I'm Anibal"
+					subtitle="Software Engineer && Content Creator"
+				/>
+				<Separator />
+				<AboutMe />
 			</PageContainer>
 		</>
 	);

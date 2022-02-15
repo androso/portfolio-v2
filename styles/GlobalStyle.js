@@ -50,6 +50,14 @@ const GlobalStyle = createGlobalStyle`
         margin: 0 auto;
     }
     
+    .title {
+        color: var(--outstanding-text);
+        font-weight: 500;
+        font-size: 2.66rem;
+    }    
+    a:hover {
+        text-decoration: underline;
+    }
 `;
 
 export default GlobalStyle;

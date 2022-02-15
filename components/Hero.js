@@ -43,7 +43,7 @@ const socialLinks = [
 	},
 ];
 
-export default function Hero() {
+export default function Hero({title, subtitle}) {
 	return (
 		<StyledHero className="container">
 			<Image
@@ -54,8 +54,8 @@ export default function Hero() {
 				height="203px"
 			/>
 			{/* <img class="landing__avatar" src="/avatar-ivvana.png" alt="Anibal Andrade" title="that's me!! " /> */}
-			<h1 className="title">Hey, I'm Anibal</h1>
-			<h2 className="profession subtitle">Software Engineer && Content Creator</h2>
+			<h1 className="title">{title}</h1>
+			<h2 className="profession subtitle">{subtitle}</h2>
 			<div className="landing__social-links">
 				{socialLinks.map((link) => {
 					return (

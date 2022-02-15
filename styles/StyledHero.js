@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 const StyledHero = styled.section`
-    color: red;
     height: calc(100vh - 66px);
 	display: flex;
 	flex-direction: column;
@@ -11,11 +10,6 @@ const StyledHero = styled.section`
     .avatar {
         width: 203px;
         border-radius: 50%;
-    }
-    .title {
-        color: var(--outstanding-text);
-        font-weight: 500;
-        font-size: 2.66rem;
     }
     .profession {
         color: var(--outstanding-shadow-text);
