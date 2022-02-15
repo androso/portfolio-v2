@@ -42,112 +42,60 @@ const projects = [
 export default function Projects() {
 	return (
 		<div className="container">
-			<h2 class="projects__title title">Projects</h2>
-			<h3 class="projects__subtitle shadow-subtitle">Builders build, huh?</h3>
+			<h2 className="projects__title title">Projects</h2>
+			<h3 className="projects__subtitle shadow-subtitle">Builders build, huh?</h3>
 			{projects.map((project) => {
 				return (
-					<div class="project__card">
-						<div class="project__img-container">
-							<a
-								href={project.img.href}
-								target="_blank"
-								title={project.img.title}
-							>
-								<img src={project.img.src} alt={project.title} />
-							</a>
-						</div>
-						<div class="project__text-container">
-							<h3 class="project__title">
-								<a href="https://quiz-time.androsoa3.repl.co/" target="_blank">
-									{project.title}
-								</a>
-							</h3>
-							<p class="project__description">{project.description}</p>
-							<p class="project__stack">
-								{project.stack.map((stack) => (
-									<span className="stack__item">{stack}</span>
-								))}
-							</p>
-							<div class="project__links-container">
-								{project.extLinks.map((extLink) => {
-									return (
-										<a
-											href={extLink.href}
-											target="_blank"
-											alt={extLink.title}
-											title={extLink.title}
-										>
-											{extLink.name === "Replit" ? (
-												<img id="replit-gra-icon" src={extLink.icon} />
-											) : (
-												<FontAwesomeIcon icon={extLink.icon} />
-											)}
-										</a>
-									);
-								})}
-							</div>
-							<div class="project__background"></div>
-						</div>
-					</div>
+					<Project project={project}/>
 				);
 			})}
 		</div>
 	);
 }
 
-function Project({ $image }) {
+function Project({ project }) {
 	return (
-		<div class="project__card">
-			<div class="project__img-container">
+		<div className="project__card">
+			<div className="project__img-container">
 				<a
-					href="https://quiz-time.androsoa3.repl.co/"
+					href={project.img.href}
 					target="_blank"
-					title="Live Demo"
+					title={project.img.title}
 				>
-					<img src="./img/quiz-time-cover.png" alt="Quiz Time!! trivia game" />
+					<img src={project.img.src} alt={project.title} />
 				</a>
 			</div>
-			<div class="project__text-container">
-				<h3 class="project__title">
+			<div className="project__text-container">
+				<h3 className="project__title">
 					<a href="https://quiz-time.androsoa3.repl.co/" target="_blank">
-						Quiz-time!!
+						{project.title}
 					</a>
 				</h3>
-				<p class="project__description">
-					A fun trivia game that queries data from the opentriviadb, lets you
-					pick the range of difficulty, genre of the questions and number.
+				<p className="project__description">{project.description}</p>
+				<p className="project__stack">
+					{project.stack.map((stack) => (
+						<span className="stack__item">{stack}</span>
+					))}
 				</p>
-				<p class="project__stack">
-					<span class="stack__item">Vanilla JS</span>
-					<span class="stack__item">CSS</span>
-					<span class="stack__item">Opendb API</span>
-					<span class="stack__item">Replit</span>
-				</p>
-				<div class="project__links-container">
-					<a
-						href="https://replit.com/@androsoa3/quiz-time"
-						target="_blank"
-						alt="Replit source code"
-						title="Replit source code"
-					>
-						<img id="replit-gray-icon" src="./img/replit-gray.svg" />
-					</a>
-					<a
-						href="https://github.com/androso/quiz-app"
-						target="_blank"
-						title="source code on github"
-					>
-						<i class="fab fa-github gray-icon"></i>
-					</a>
-					<a
-						href="https://quiz-time.androsoa3.repl.co/"
-						target="_blank"
-						title="Live Demo"
-					>
-						<i class="fas fa-external-link-alt gray-icon"></i>
-					</a>
+				<div className="project__links-container">
+					{project.extLinks.map((extLink) => {
+						return (
+							<a
+								href={extLink.href}
+								target="_blank"
+								alt={extLink.title}
+								title={extLink.title}
+							>
+								{extLink.name === "Replit" ? (
+									<img id="replit-gra-icon" src={extLink.icon} />
+								) : (
+									<FontAwesomeIcon icon={extLink.icon} />
+								)}
+							</a>
+						);
+					})}
 				</div>
-				<div class="project__background"></div>
+				<div className="project__background"></div>
 			</div>
 		</div>
 	);
