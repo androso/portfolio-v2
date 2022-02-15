@@ -23,15 +23,6 @@ const StyledHero = styled.section`
         align-items: center;
         margin-bottom: var(--md-margin-bottom);
     }
-    .blue-icon {
-        width: 25px;
-        height: 25px;
-        margin-left: 20px;
-        cursor: pointer;
-        color: var(--outstanding-shadow-text);
-        opacity: 0.9;
-        transition: opacity 0.3s ease;
-    }
     .blue-icon:first-child {
         margin-left: 0;
     }

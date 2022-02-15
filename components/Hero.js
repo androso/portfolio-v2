@@ -83,7 +83,9 @@ export default function Hero({title, subtitle}) {
 			</div>
 			<div className="landing learn-more">
 				<Link href="#about_me">
-					<FontAwesomeIcon icon={faChevronDown} className="blue-icon"/>
+					<a>
+						<FontAwesomeIcon icon={faChevronDown} className="blue-icon"/>
+					</a>
 				</Link>
 			</div>
 		</StyledHero>

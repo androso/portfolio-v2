@@ -3,6 +3,7 @@ import React from "react";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { StyledProjects } from "../styles";
 
 const projects = [
 	{
@@ -41,15 +42,17 @@ const projects = [
 
 export default function Projects() {
 	return (
-		<div className="container">
-			<h2 className="projects__title title">Projects</h2>
-			<h3 className="projects__subtitle shadow-subtitle">Builders build, huh?</h3>
-			{projects.map((project) => {
-				return (
-					<Project project={project}/>
-				);
-			})}
-		</div>
+		<StyledProjects className="projects">
+			<div className="container">
+				<h2 className="projects__title title">Projects</h2>
+				<h3 className="projects__subtitle shadow-subtitle">Builders build, huh?</h3>
+				{projects.map((project) => {
+					return (
+						<Project project={project}/>
+					);
+				})}
+			</div>
+		</StyledProjects>
 	);
 }
 
@@ -85,6 +88,7 @@ function Project({ project }) {
 								target="_blank"
 								alt={extLink.title}
 								title={extLink.title}
+								className="blue-icon"
 							>
 								{extLink.name === "Replit" ? (
 									<img id="replit-gra-icon" src={extLink.icon} />

@@ -29,6 +29,7 @@ const GlobalStyle = createGlobalStyle`
         background-size: 400% 400%;
         animation: gradient 15s ease infinite;
         font-family: var(--font-stack);
+        /* font-family: "Poppins"; */
         line-height: 1.5;
         font-size: 18px;
         color: #fafafa;
@@ -57,6 +58,16 @@ const GlobalStyle = createGlobalStyle`
     }    
     a:hover {
         text-decoration: underline;
+    }
+    
+    .blue-icon {
+        width: 25px;
+        height: 25px;
+        margin-left: 20px;
+        cursor: pointer;
+        color: var(--outstanding-shadow-text);
+        opacity: 0.9;
+        transition: opacity 0.3s ease;
     }
 `;
 
