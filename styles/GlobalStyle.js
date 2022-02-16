@@ -7,7 +7,9 @@ const GlobalStyle = createGlobalStyle`
     ${Variables};
     html {
         box-sizing: border-box;
+        scroll-behavior: smooth;
     }
+
 
     *,
     *:before,

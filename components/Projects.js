@@ -106,7 +106,7 @@ const projects = [
 
 export default function Projects() {
 	return (
-		<StyledProjects className="projects">
+		<StyledProjects className="projects" id="Projects">
 			<div className="container">
 				<h2 className="projects__title title">Projects</h2>
 				<h3 className="projects__subtitle shadow-subtitle">

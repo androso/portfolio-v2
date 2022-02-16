@@ -5,7 +5,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 export default function Contact() {
 	return (
-		<StyledContact>
+		<StyledContact id="Contact">
 			<div className="container">
 				<h2 className="contact__title title">Contact</h2>
 				<p className="contact__text">Feel free to reach out :{")"}</p>

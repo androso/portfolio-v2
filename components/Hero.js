@@ -45,7 +45,7 @@ const socialLinks = [
 
 export default function Hero({title, subtitle}) {
 	return (
-		<StyledHero className="container">
+		<StyledHero className="container" id="Home">
 			<Image
 				className="avatar"
 				src={"/avatar-ivvana.png"}

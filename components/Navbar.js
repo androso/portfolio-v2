@@ -6,8 +6,8 @@ import { useState } from "react";
 const links = [
     {title: "Home", href: "#Home"},
     {title: "About", href: "#About"},
-    {title: "Blog", href: "#Blog"},
     {title: "Projects", href: "#Projects"},
+    {title: "Blog", href: "#Blog"},
     {title: "Contact", href: "#Contact"},
     {title: "Resumé", href: "/Resume-Anibal-Andrade.pdf", target: "_blank"},
     
