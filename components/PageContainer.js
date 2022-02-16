@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Navbar from "./Navbar";
 import Footer from './Footer';
 
-export default function PageContainer({ footer, children, ...customMetaData }) {
+export default function PageContainer({ navIsOpen, setNavIsOpen, footer, children, ...customMetaData }) {
 	const router = useRouter();
 	const meta = {
 		title: "Anibal Andrade - Software Engineer, Creator, Designer",
@@ -41,11 +41,14 @@ export default function PageContainer({ footer, children, ...customMetaData }) {
 					<meta property="article:published_time" content={meta.date} />
 				)}
 			</Head>
-            <Navbar />
+      <Navbar 
+          navIsOpen={navIsOpen}
+          setNavIsOpen={setNavIsOpen}
+      />
 			<main>
 				{children}
 			</main>
-            {footer && <Footer />}
+      {footer && <Footer />}
 		</div>
 	);
 }

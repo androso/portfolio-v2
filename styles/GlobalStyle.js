@@ -35,6 +35,7 @@ const GlobalStyle = createGlobalStyle`
         line-height: 1.5;
         font-size: 18px;
         color: #fafafa;
+        overflow: ${props => props.bodyOverflow}
     }
 
     @keyframes gradient {
