@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import { PageContainer, Projects, Hero, AboutMe, Contact} from "../components";
 import { GlobalStyle } from "../styles";
 import styled from "styled-components";
+import { useState } from "react";
 
 const Separator = styled.hr`
 	border: none;
@@ -14,10 +15,17 @@ margin-bottom: 100px;
 `;
 
 export default function Home() {
+  const [navIsOpen, setNavIsOpen] = useState(null);
+  
 	return (
 		<>
-			<GlobalStyle />
-			<PageContainer>
+			<GlobalStyle 
+        bodyOverflow={navIsOpen ? "hidden": "visible"}
+      />
+			<PageContainer 
+        navIsOpen={navIsOpen}
+        setNavIsOpen={setNavIsOpen}
+      >
 				<Hero 
 					title="Hey, I'm Anibal"
 					subtitle="Software Engineer && Content Creator"

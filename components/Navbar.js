@@ -1,6 +1,6 @@
 import { StyledNavbar } from "../styles";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 
 const links = [
@@ -10,24 +10,29 @@ const links = [
     {title: "Blog", href: "#Blog"},
     {title: "Contact", href: "#Contact"},
     {title: "Resumé", href: "/Resume-Anibal-Andrade.pdf", target: "_blank"},
-    
 ]
 
-export default function Navbar () {
-    const [navIsOpen, setNavIsOpen] = useState(null);
-
+export default function Navbar ({navIsOpen, setNavIsOpen}) {
+    // const [navIsOpen, setNavIsOpen] = useState(null);
+    
     const toggleNavbar = () => {
         setNavIsOpen(!navIsOpen);
-        console.log(!navIsOpen);
     }
+  
     return (
         <StyledNavbar >
-            
                 <div className={`nav ${navIsOpen ? "open" : "closed"}`}>
                     {links.map(link => {
                         return (
                             <Link href={link.href} key={link.title}>
-                                <a className="nav-item" alt={link.title} target={link.target ? link.target : ""}>{link.title}</a>
+                                <a 
+                                  className="nav-item" 
+                                  alt={link.title} 
+                                  target={link.target ? link.target : ""}
+                                  onClick={() => (setNavIsOpen(false))}
+                                >
+                                  {link.title}
+                                </a>
                             </Link>        
                         )
                     })}
