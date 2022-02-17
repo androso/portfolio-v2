@@ -8,7 +8,7 @@ const Variables = css`
 		--sm-margin-bottom: 8px;
 		--md-margin-bottom: 28px;
 		--xl-margin-bottom: 34px;
-		--font-stack: "Poppins", 'Open Sans', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+		--font-stack: 'Open Sans', "Poppins",  -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 	}
 `;
 export default Variables;

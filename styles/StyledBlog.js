@@ -2,9 +2,7 @@ import styled from 'styled-components';
 
 const Blog = styled.section`
     text-align: center;
-    .container {
-        /* background-color: red; */
-    }
+    margin-bottom: 100px;
     .title {
         font-size: 2rem;
     }
@@ -14,7 +12,7 @@ const Blog = styled.section`
     .shadow-subtitle.date {
         margin-bottom: 0;
         font-size: 1rem;
-        text-align: center !important;
+        text-align: center;
     }
     .feed-head {
         display: flex;
@@ -23,11 +21,11 @@ const Blog = styled.section`
     }
     .feed-head .featured-text,
     .shadow-subtitle.date {
-        width: 30%;
-        text-align: left;
+        width: 30%;   
     }
     .featured-text {
         display: none;
+        text-align: left;
     }
     .line-divider,
     .blog__main-data {
@@ -60,17 +58,26 @@ const Blog = styled.section`
     }
 
     @media (min-width: 700px) {
+        .container {
+            padding: 0 40px;
+        }
         .featured-text {
             display: initial;
         }
         .blog__post {
             flex-direction: row;
             justify-content: space-between;
+            align-items: flex-start;
             padding: 0 30px 0 0;
+        }
+        .shadow-subtitle.date {
+            text-align: left;
         }
         .blog__description {
             display: initial;
-        }   
+            color: var(--subtitle-color);
+            font-size: 1rem
+        }
         .blog__main-data{
             text-align: left;
         }
