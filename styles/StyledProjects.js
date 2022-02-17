@@ -17,12 +17,6 @@ const StyledProjects = styled.section`
 		font-size: 2rem;
 		margin-bottom: var(--sm-margin-bottom);
 	}
-	.projects__subtitle {
-		font-size: 1.2rem;
-		color: var(--subtitle-color);
-		font-weight: 500;
-		margin-bottom: 60px;
-	}
 	.project__card {
 		margin-bottom: 80px;
 		padding-top: 15px;
@@ -30,14 +24,15 @@ const StyledProjects = styled.section`
 	}
 	.project__title a{
 		color: #e5feff;
-        /* font-weight: 700; */
+        font-weight: 700;
+		font-size: 1.5rem;
 	}
 	.project__title a:hover {
 		text-decoration: underline;
 	}
 	.project__text-container {
 		max-width: 300px;
-		/* position: relative; */
+		
 	}
 	.project__description {
 		color: #bbd1d1;

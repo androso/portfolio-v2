@@ -72,6 +72,13 @@ const GlobalStyle = createGlobalStyle`
         opacity: 0.9;
         transition: opacity 0.3s ease;
     }
+
+    .shadow-subtitle {
+		font-size: 1.2rem;
+		color: var(--subtitle-color);
+		font-weight: 500;
+		margin-bottom: 60px;
+	}
 `;
 
 export default GlobalStyle;
