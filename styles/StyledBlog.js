@@ -44,6 +44,12 @@ const Blog = styled.section`
         flex-direction: column-reverse;
         align-items: center;
         margin-bottom: 15px;
+        transition: background-color .3s ease;
+        border-radius: 10px;
+        padding: 10px 0;
+    }
+    .blog__post:hover {
+        background-color: rgba(26, 37, 51,  1);
     }
     .blog__main-data{
         text-align: center;
@@ -68,10 +74,11 @@ const Blog = styled.section`
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-start;
-            padding: 0 30px 0 0;
+            padding: 10px 30px 10px 0;
         }
         .shadow-subtitle.date {
             text-align: left;
+            padding-left: 20px;
         }
         .blog__description {
             display: initial;
