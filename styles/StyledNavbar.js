@@ -31,7 +31,7 @@ const StyledNavbar = styled.nav`
   } 
 
   /* MOBILE STYLES */
-  @media (max-width: 650px) {
+  @media (max-width: 650px)  {
     
     margin-right: 15px;
     
@@ -111,7 +111,6 @@ const StyledNavbar = styled.nav`
       align-items: center;
     }
   }
-
 `;
 
 

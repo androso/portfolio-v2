@@ -42,6 +42,11 @@ const StyledHero = styled.section`
         color: #93dfc8;
     }
 
+    @media (max-height: 500px) {
+        height: auto;
+    }
+
+
 `;
 
 export default StyledHero;
