@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 const StyledProjects = styled.section`
-	
+	padding-top: calc(var(--section-top-padding) - 40px);
+	margin-bottom: 100px;
     text-align: center;
 	
 	.container {

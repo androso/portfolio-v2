@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 const Blog = styled.section`
     text-align: center;
+    padding-top: var(--section-top-padding);
     margin-bottom: 100px;
     .title {
         font-size: 2rem;

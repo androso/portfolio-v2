@@ -10,7 +10,6 @@ const Separator = styled.hr`
 	border: none;
 	height: 2px;
 	background: var(--outstanding-shadow-text);
-margin-bottom: 100px;
 	opacity: 0.2;
 `;
 

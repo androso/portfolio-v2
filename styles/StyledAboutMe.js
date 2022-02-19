@@ -1,8 +1,8 @@
  import styled from "styled-components";
 
  const StyledAboutMe = styled.section`
-    
-	margin-bottom: var(--md-margin-bottom);
+    padding-top: var(--section-top-padding);
+	/* margin-bottom: var(--md-margin-bottom); */
     color: #fafafa;
     
     .container {

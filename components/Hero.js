@@ -46,15 +46,7 @@ const socialLinks = [
 export default function Hero({title, subtitle}) {
 	return (
 		<StyledHero className="container" id="Home">
-    {/*
-			<Image
-				className="avatar"
-				src={"/avatar-ivvana.png"}  
-				alt="Anibal Andrade"
-				width="203px"
-				height="203px"
-			/>
-          */}
+
 		  <img className="avatar" src="/avatar-ivvana.png" alt="Anibal Andrade" title="that's me!! " />
 			<h1 className="title">{title}</h1>
 			<h2 className="profession subtitle">{subtitle}</h2>
@@ -84,7 +76,7 @@ export default function Hero({title, subtitle}) {
 				
 			</div>
 			<div className="landing learn-more">
-				<Link href="#about_me">
+				<Link href="#About">
 					<a>
 						<FontAwesomeIcon icon={faChevronDown} className="blue-icon"/>
 					</a>

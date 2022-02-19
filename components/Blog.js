@@ -51,6 +51,7 @@ export default function Blog() {
 					
 					title="My Garden of Words"
 					subtitle="Essays of a life explorer"
+					type="Essays"
 					blog={personalBlog} 
 				/>
 			</div>
@@ -58,7 +59,7 @@ export default function Blog() {
 	);
 }
 
-function BlogFeed({ blog, title, subtitle}) {
+function BlogFeed({ blog, title, subtitle, type}) {
 	return (
 		<>
 			<h2 className="title">
@@ -68,21 +69,25 @@ function BlogFeed({ blog, title, subtitle}) {
 			</h2>
 			<h3 className="shadow-subtitle">{subtitle}</h3>
 			<div className="feed-head">
-				<p className="featured-text">Featured Articles</p>
+				<p className="featured-text">
+					<a href={blog.src} target="_blank" alt={Blog.src}>
+						Featured {type}
+					</a>
+				</p>
 				<span className="line-divider"></span>
 			</div>
 			{blog.blogs.map(post => {
 				return (
 					<div className="blog__post" key={post.id}>
-						<p className="shadow-subtitle date">{post.date}</p>
-						<div className="blog__main-data">
-							<h4 className="blog__title">
-								<a href={post.href} alt={post.title} target="_blank">
-									{post.title}
-								</a>
-							</h4>
-							<p className="blog__description ">{post.abstract}</p>
-						</div>
+							<p className="shadow-subtitle date">{post.date}</p>
+							<div className="blog__main-data">
+								<h4 className="blog__title">
+									<a href={post.href} alt={post.title} target="_blank">
+										{post.title}
+									</a>
+								</h4>
+								<p className="blog__description ">{post.abstract}</p>
+							</div>
 					</div>
 				)
 			})}

@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 const StyledContact = styled.section`
+	padding-top: var(--section-top-padding);
+
     .contact-links {
         display: inline-grid;
-        /* background-color: red; */
         margin-top: 20px;
         margin-bottom: 100px;
     }

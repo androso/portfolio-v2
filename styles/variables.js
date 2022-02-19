@@ -6,9 +6,10 @@ const Variables = css`
 		--outstanding-shadow-text: #78b9a5;
 		--subtitle-color: #7d8989;
 		--sm-margin-bottom: 8px;
-		--md-margin-bottofm: 28px;
+		--md-margin-bottom: 28px;
 		--xl-margin-bottom: 34px;
 		--font-stack: 'Open Sans', "Poppins",  -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+		--section-top-padding: 100px;
 	}
 `;
 export default Variables;
