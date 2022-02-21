@@ -63,14 +63,14 @@ function BlogFeed({ blog, title, subtitle, type}) {
 	return (
 		<>
 			<h2 className="title">
-				<a href={blog.src} target="_blank" alt={Blog.src}>
+				<a href={blog.src} target="_blank" alt={Blog.src} rel="noreferrer">
 					{title}
 				</a>
 			</h2>
 			<h3 className="shadow-subtitle">{subtitle}</h3>
 			<div className="feed-head">
 				<p className="featured-text">
-					<a href={blog.src} target="_blank" alt={Blog.src}>
+					<a href={blog.src} target="_blank" rel="noreferrer" alt={Blog.src}>
 						Featured {type}
 					</a>
 				</p>
@@ -82,7 +82,7 @@ function BlogFeed({ blog, title, subtitle, type}) {
 							<p className="shadow-subtitle date">{post.date}</p>
 							<div className="blog__main-data">
 								<h4 className="blog__title">
-									<a href={post.href} alt={post.title} target="_blank">
+									<a href={post.href} alt={post.title} target="_blank" rel="noreferrer">
 										{post.title}
 									</a>
 								</h4>

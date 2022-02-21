@@ -4,6 +4,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { StyledProjects } from "../styles";
+import Image from "next/image";
 
 const projects = [
 	{
@@ -124,13 +125,16 @@ function Project({ project }) {
 	return (
 		<div className="project__card">
 			<div className="project__img-container">
-				<a href={project.img.href} target="_blank" title={project.img.title}>
-					<img src={project.img.src} alt={project.title} />
+				<a href={project.img.href} target="_blank" rel="noreferrer" title={project.img.title}>
+          <Image 
+            src={project.img.src} 
+            alt={project.title}
+          />
 				</a>
 			</div>
 			<div className="project__text-container">
 				<h3 className="project__title">
-					<a href={project.img.href} target="_blank">
+					<a href={project.img.href} target="_blank" rel="noreferrer">
 						{project.title}
 					</a>
 				</h3>
@@ -152,9 +156,10 @@ function Project({ project }) {
 								title={extLink.title}
 								className="blue-icon"
 								key={extLink.title}
+                rel="noreferrer"
 							>
 								{extLink.name === "Replit" ? (
-									<img id="replit-gra-icon" src={extLink.icon} />
+                  <Image id="replit-gra-icon" alt="replit" src={extLink.icon} />
 								) : (
 									<FontAwesomeIcon icon={extLink.icon} />
 								)}

@@ -47,7 +47,16 @@ export default function Hero({title, subtitle}) {
 	return (
 		<StyledHero className="container" id="Home">
 
-		  <img className="avatar" src="/avatar-ivvana.png" alt="Anibal Andrade" title="that's me!! " />
+		  
+
+      <Image 
+        className="avatar"
+        alt="Anibal Andrade"
+        title="that's me!!"
+        src="/avatar-ivvana.png"
+        width="250"
+        height="250"
+      />
 			<h1 className="title">{title}</h1>
 			<h2 className="profession subtitle">{subtitle}</h2>
 			<div className="landing__social-links">
@@ -59,17 +68,25 @@ export default function Hero({title, subtitle}) {
                                 target={link.target}
                                 className={link.classname}
                                 key={link.href}
+                                rel="noreferrer"
                             >
-                                <img
-                                    id="replit-blue-icon"
-                                    src="/replit-blue-period.svg"
-                                    alt="replit icon"
+                                
+                                <Image 
+                                  id="replit-blue-icon"
+                                  src="/replit-blue-period.svg"
+                                  alt="replit icon"
                                 />
                             </a>
                         ) : (
-                            <a href={link.href} target={link.href} className={link.classname} key={link.href}>
-							    <FontAwesomeIcon icon={link.icon} />
-						    </a>
+                            <a 
+                              href={link.href} 
+                              target={link.href} 
+                              className={link.classname} 
+                              key={link.href}
+                              rel="noreferrer"
+                            >
+                              <FontAwesomeIcon icon={link.icon} />
+						                </a>
                         )
 					);
 				})}
