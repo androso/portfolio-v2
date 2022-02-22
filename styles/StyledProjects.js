@@ -80,11 +80,12 @@ const StyledProjects = styled.section`
 		.project__img-container {
 			display: inline-block;
 		}
-		.project__img-container img {
+		.project__img-container .screenshot {
 			width: 400px;
 			border-radius: 6px;
 			margin-right: 30px;
 		}
+
 		.projects {
 			text-align: left;
 		}

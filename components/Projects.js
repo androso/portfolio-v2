@@ -17,7 +17,14 @@ const projects = [
 		},
 		description:
 			"A simple-to-use web app that lets you see general stats about you, such as Top Artists, Top Tracks, Top Albums and your Playlists.",
-		stack: ["Express", "React", "Spotify API", "Vite.js", "Replit", "Styled Components"],
+		stack: [
+			"Express",
+			"React",
+			"Spotify API",
+			"Vite.js",
+			"Replit",
+			"Styled Components",
+		],
 		extLinks: [
 			{
 				name: "Replit",
@@ -125,11 +132,19 @@ function Project({ project }) {
 	return (
 		<div className="project__card">
 			<div className="project__img-container">
-				<a href={project.img.href} target="_blank" rel="noreferrer" title={project.img.title}>
-          <Image 
-            src={project.img.src} 
-            alt={project.title}
-          />
+				<a
+					href={project.img.href}
+					target="_blank"
+					rel="noreferrer"
+					title={project.img.title}
+					className="demo-screenshot"
+				>
+					<Image
+					 width="400px"
+					 height="240px"
+					 src={project.img.src}
+					 alt={project.title}
+					 className="screenshot" />
 				</a>
 			</div>
 			<div className="project__text-container">
@@ -156,10 +171,15 @@ function Project({ project }) {
 								title={extLink.title}
 								className="blue-icon"
 								key={extLink.title}
-                rel="noreferrer"
+								rel="noreferrer"
 							>
 								{extLink.name === "Replit" ? (
-                  <Image id="replit-gra-icon" alt="replit" src={extLink.icon} />
+									<Image
+										id="replit-gray-icon"
+										alt="replit"
+										src={extLink.icon}
+										layout="fill"
+									/>
 								) : (
 									<FontAwesomeIcon icon={extLink.icon} />
 								)}

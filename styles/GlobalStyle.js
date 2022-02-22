@@ -71,6 +71,7 @@ const GlobalStyle = createGlobalStyle`
         color: var(--outstanding-shadow-text);
         opacity: 0.9;
         transition: opacity 0.3s ease;
+        position: relative;
     }
 
     .shadow-subtitle {

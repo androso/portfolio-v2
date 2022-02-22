@@ -6,7 +6,7 @@ import {
 	faLinkedin,
 	faGithub,
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faChevronDown } from "@fortawesome/free-solid-svg-icons"
+import { faEnvelope, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -39,63 +39,60 @@ const socialLinks = [
 		href: "https://replit.com/@androsoa3",
 		target: "_blank",
 		classname: "blue-icon",
-		icon: "replit"
+		icon: "replit",
 	},
 ];
 
-export default function Hero({title, subtitle}) {
+export default function Hero({ title, subtitle }) {
 	return (
 		<StyledHero className="container" id="Home">
-
-		  
-
-      <Image 
-        className="avatar"
-        alt="Anibal Andrade"
-        title="that's me!!"
-        src="/avatar-ivvana.png"
-        width="250"
-        height="250"
-      />
+			<div className="avatar">
+				<Image
+					className="image"
+					alt="Anibal Andrade"
+					title="that's me!!"
+					src="/avatar-ivvana.png"
+					layout="fill"
+				/>
+			</div>
+			
 			<h1 className="title">{title}</h1>
 			<h2 className="profession subtitle">{subtitle}</h2>
 			<div className="landing__social-links">
 				{socialLinks.map((link) => {
-					return (
-						link.icon === "replit" ? (
-                            <a
-                                href={link.href}
-                                target={link.target}
-                                className={link.classname}
-                                key={link.href}
-                                rel="noreferrer"
-                            >
-                                
-                                <Image 
-                                  id="replit-blue-icon"
-                                  src="/replit-blue-period.svg"
-                                  alt="replit icon"
-                                />
-                            </a>
-                        ) : (
-                            <a 
-                              href={link.href} 
-                              target={link.href} 
-                              className={link.classname} 
-                              key={link.href}
-                              rel="noreferrer"
-                            >
-                              <FontAwesomeIcon icon={link.icon} />
-						                </a>
-                        )
+					return link.icon === "replit" ? (
+						<a
+							href={link.href}
+							target={link.target}
+							className={link.classname}
+							key={link.href}
+							rel="noreferrer"
+							className={`${link.classname} replit-blue-icon`}
+						>
+							<Image
+								id="replit-blue-icon"
+								src="/replit-blue-period.svg"
+								alt="replit icon"
+								layout="fill"
+							/>
+						</a>
+					) : (
+						<a
+							href={link.href}
+							target={link.href}
+							className={link.classname}
+							key={link.href}
+							rel="noreferrer"
+						>
+							<FontAwesomeIcon icon={link.icon} />
+						</a>
 					);
 				})}
-				
 			</div>
 			<div className="landing learn-more">
 				<Link href="#About">
 					<a>
-						<FontAwesomeIcon icon={faChevronDown} className="blue-icon"/>
+						<FontAwesomeIcon icon={faChevronDown} className="blue-icon" />
 					</a>
 				</Link>
 			</div>

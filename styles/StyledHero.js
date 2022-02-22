@@ -9,6 +9,12 @@ const StyledHero = styled.section`
     
     .avatar {
         width: 203px;
+        height: 203px;
+        display: inline-block;
+        border-radius: 50%;
+        position: relative;
+    }
+    .avatar .image {
         border-radius: 50%;
     }
     .profession {
@@ -26,8 +32,14 @@ const StyledHero = styled.section`
     .blue-icon:first-child {
         margin-left: 0;
     }
+    .replit-blue-icon {
+        position: relative;
+    }
     #replit-blue-icon {
         display: flex;
+    }
+    .blue-icon svg {
+        height: 25px !important;
     }
     .blue-icon.fa-chevron-down {
         color: #cccccc;
