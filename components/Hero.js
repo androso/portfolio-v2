@@ -51,11 +51,11 @@ export default function Hero({ title, subtitle }) {
 					className="image"
 					alt="Anibal Andrade"
 					title="that's me!!"
-					src="/avatar-ivvana.png"
+					src="/anibal.jpg"
 					layout="fill"
 				/>
 			</div>
-			
+
 			<h1 className="title">{title}</h1>
 			<h2 className="profession subtitle">{subtitle}</h2>
 			<div className="landing__social-links">
@@ -67,7 +67,6 @@ export default function Hero({ title, subtitle }) {
 							className={link.classname}
 							key={link.href}
 							rel="noreferrer"
-							className={`${link.classname} replit-blue-icon`}
 						>
 							<Image
 								id="replit-blue-icon"

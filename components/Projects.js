@@ -8,6 +8,71 @@ import Image from "next/image";
 
 const projects = [
 	{
+		title: "Timezoner v2",
+		img: {
+			href: "https://timezoner-liart.vercel.app/dashboard",
+			title: "Go to Live Demo",
+			src: "/timezoner-v2-cover.png",
+			alt: "Timezoner v2 app",
+		},
+		description:
+			"A small web app to help you organize events with friends from different timezones.",
+		stack: [
+			"React",
+			"Typescript",
+			"Firebase",
+			"Cypress",
+			"Tailwind",
+			"React-hook-form",
+		],
+		extLinks: [
+			{
+				name: "Github",
+				href: "https://github.com/androso/timezoner-v2",
+				title: "Github source code",
+				icon: faGithub,
+			},
+			{
+				name: "Live Demo",
+				href: "https://timezoner-liart.vercel.app/dashboard",
+				title: "Live Demo",
+				icon: faExternalLinkAlt,
+			},
+		],
+	},
+	{
+		title: "Timezoner v1",
+		img: {
+			href: "https://timezoner.androsoa3.repl.co",
+			title: "Go to Live Demo",
+			src: "/timezoner-v1-cover.png",
+			alt: "Timezoner v1 app",
+		},
+		description:
+			"A small web app to help you organize events with friends from different timezones.",
+		stack: ["React", "Styled Components", "React-hook-form"],
+		extLinks: [
+			{
+				name: "Replit",
+				href: "https://replit.com/@androsoa3/timezoner",
+				title: "Replit source code",
+				icon: "/replit-gray.svg",
+			},
+			{
+				name: "Github",
+				href: "https://github.com/androso/timezoner",
+				title: "Github source code",
+				icon: faGithub,
+			},
+			{
+				name: "Live Demo",
+				href: "https://timezoner.androsoa3.repl.co",
+				title: "Live Demo",
+				icon: faExternalLinkAlt,
+			},
+		],
+	},
+	{
 		title: "Spotify Stats",
 		img: {
 			href: "https://youtu.be/ipCte18RoBc",
@@ -140,11 +205,12 @@ function Project({ project }) {
 					className="demo-screenshot"
 				>
 					<Image
-					 width="400px"
-					 height="240px"
-					 src={project.img.src}
-					 alt={project.title}
-					 className="screenshot" />
+						width="400px"
+						height="240px"
+						src={project.img.src}
+						alt={project.title}
+						className="screenshot"
+					/>
 				</a>
 			</div>
 			<div className="project__text-container">

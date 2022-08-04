@@ -3,8 +3,8 @@ import styled from "styled-components";
 const StyledProjects = styled.section`
 	padding-top: calc(var(--section-top-padding) - 40px);
 	margin-bottom: 100px;
-    text-align: center;
-	
+	text-align: center;
+
 	.container {
 		display: flex;
 		flex-direction: column;
@@ -23,9 +23,9 @@ const StyledProjects = styled.section`
 		padding-top: 15px;
 		position: relative;
 	}
-	.project__title a{
+	.project__title a {
 		color: #e5feff;
-        font-weight: 700;
+		font-weight: 700;
 		font-size: 1.5rem;
 	}
 	.project__title a:hover {
@@ -33,7 +33,6 @@ const StyledProjects = styled.section`
 	}
 	.project__text-container {
 		max-width: 300px;
-		
 	}
 	.project__description {
 		color: #bbd1d1;
@@ -44,7 +43,7 @@ const StyledProjects = styled.section`
 		color: var(--outstanding-shadow-text);
 		font-weight: 400;
 		margin-bottom: var(--xl-margin-bottom);
-        padding: 0 10px;
+		padding: 0 10px;
 	}
 	.stack__item {
 		margin-left: 12px;
@@ -97,6 +96,7 @@ const StyledProjects = styled.section`
 		}
 		.project__stack {
 			margin-bottom: var(--sm-margin-bottom);
+			overflow-wrap: break-word;
 		}
 		.project__stack .styled-components {
 			margin-left: 0;
