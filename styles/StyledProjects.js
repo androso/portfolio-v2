@@ -44,6 +44,7 @@ const StyledProjects = styled.section`
 		font-weight: 400;
 		margin-bottom: var(--xl-margin-bottom);
 		padding: 0 10px;
+		overflow-wrap: break-word;
 	}
 	.stack__item {
 		margin-left: 12px;
