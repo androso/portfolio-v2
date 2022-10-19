@@ -8,6 +8,37 @@ import Image from "next/image";
 
 const projects = [
 	{
+		title: "Kanban-app",
+		img: {
+			href: "http://kanban-app-eight.vercel.app/",
+			title: "Go to Live Demo",
+			src: "/kanban-app.png",
+			alt: "Kanban app",
+		},
+		description: "A full-stack kanban app built with Next.js, Express.js and Postgres.",
+		stack: ["Typescript", "React.js", "Next.js", "Express.js", "Postgres", "Tailwindcss", "DaisyUI", "React Query"],
+		extLinks: [
+			{
+				name: "Github",
+				href: "https://github.com/androso/kanban-app",
+				title: "Frontend source code",
+				icon: faGithub,
+			},
+			{
+				name: "Github",
+				href: "https://github.com/androso/kanban-app-bk",
+				title: "Backend source code",
+				icon: faGithub,
+			},
+			{
+				name: "Live Demo",
+				href: "http://kanban-app-eight.vercel.app/",
+				title: "Live Demo",
+				icon: faExternalLinkAlt,
+			}
+		]
+	},
+	{
 		title: "Timezoner v2",
 		img: {
 			href: "https://timezoner-liart.vercel.app/dashboard",
@@ -40,38 +71,38 @@ const projects = [
 			},
 		],
 	},
-	{
-		title: "Timezoner v1",
-		img: {
-			href: "https://timezoner.androsoa3.repl.co",
-			title: "Go to Live Demo",
-			src: "/timezoner-v1-cover.png",
-			alt: "Timezoner v1 app",
-		},
-		description:
-			"A small web app to help you organize events with friends from different timezones.",
-		stack: ["React", "Styled Components", "React-hook-form"],
-		extLinks: [
-			{
-				name: "Replit",
-				href: "https://replit.com/@androsoa3/timezoner",
-				title: "Replit source code",
-				icon: "/replit-gray.svg",
-			},
-			{
-				name: "Github",
-				href: "https://github.com/androso/timezoner",
-				title: "Github source code",
-				icon: faGithub,
-			},
-			{
-				name: "Live Demo",
-				href: "https://timezoner.androsoa3.repl.co",
-				title: "Live Demo",
-				icon: faExternalLinkAlt,
-			},
-		],
-	},
+	// {
+	// 	title: "Timezoner v1",
+	// 	img: {
+	// 		href: "https://timezoner.androsoa3.repl.co",
+	// 		title: "Go to Live Demo",
+	// 		src: "/timezoner-v1-cover.png",
+	// 		alt: "Timezoner v1 app",
+	// 	},
+	// 	description:
+	// 		"A small web app to help you organize events with friends from different timezones.",
+	// 	stack: ["React", "Styled Components", "React-hook-form"],
+	// 	extLinks: [
+	// 		{
+	// 			name: "Replit",
+	// 			href: "https://replit.com/@androsoa3/timezoner",
+	// 			title: "Replit source code",
+	// 			icon: "/replit-gray.svg",
+	// 		},
+	// 		{
+	// 			name: "Github",
+	// 			href: "https://github.com/androso/timezoner",
+	// 			title: "Github source code",
+	// 			icon: faGithub,
+	// 		},
+	// 		{
+	// 			name: "Live Demo",
+	// 			href: "https://timezoner.androsoa3.repl.co",
+	// 			title: "Live Demo",
+	// 			icon: faExternalLinkAlt,
+	// 		},
+	// 	],
+	// },
 	{
 		title: "Spotify Stats",
 		img: {
@@ -111,70 +142,70 @@ const projects = [
 			},
 		],
 	},
-	{
-		title: "Quiz-time!!",
-		img: {
-			href: "https://quiz-time.androsoa3.repl.co/",
-			title: "Live Demo",
-			src: "/quiz-time-cover.png",
-			alt: "Quiz Time!! trivia game",
-		},
-		description:
-			"A fun trivia game that queries data from the opentriviadb, lets you pick the range of difficulty, genre of the questions and number.",
-		stack: ["Vanilla JS", "CSS", "Opendb API", "Replit"],
-		extLinks: [
-			{
-				name: "Replit",
-				href: "https://replit.com/@androsoa3/quiz-time",
-				title: "Replit source code",
-				icon: "/replit-gray.svg",
-			},
-			{
-				name: "Github",
-				href: "https://github.com/androso/quiz-app",
-				title: "Github source code",
-				icon: faGithub,
-			},
-			{
-				name: "Live Demo",
-				href: "https://quiz-time.androsoa3.repl.co/",
-				title: "Live Demo",
-				icon: faExternalLinkAlt,
-			},
-		],
-	},
-	{
-		title: "Hangman",
-		img: {
-			href: "https://hangman.androsoa3.repl.co/",
-			title: "Live Demo",
-			src: "/hangman-cover.png",
-			alt: "Hangman preview",
-		},
-		description:
-			"The classic Hangman game, now on browsers with keyboard support and sounds effect, built using react and the canvas API :)",
-		stack: ["React JS", "CSS", "Canva Api", "Vite.js", "Replit"],
-		extLinks: [
-			{
-				name: "Replit",
-				href: "https://replit.com/@androsoa3/hangman",
-				title: "Replit source code",
-				icon: "/replit-gray.svg",
-			},
-			{
-				name: "Github",
-				href: "https://github.com/androso/hangman",
-				title: "Github source code",
-				icon: faGithub,
-			},
-			{
-				name: "Live Demo",
-				href: "https://hangman.androsoa3.repl.co/",
-				title: "Live Demo",
-				icon: faExternalLinkAlt,
-			},
-		],
-	},
+	// {
+	// 	title: "Quiz-time!!",
+	// 	img: {
+	// 		href: "https://quiz-time.androsoa3.repl.co/",
+	// 		title: "Live Demo",
+	// 		src: "/quiz-time-cover.png",
+	// 		alt: "Quiz Time!! trivia game",
+	// 	},
+	// 	description:
+	// 		"A fun trivia game that queries data from the opentriviadb, lets you pick the range of difficulty, genre of the questions and number.",
+	// 	stack: ["Vanilla JS", "CSS", "Opendb API", "Replit"],
+	// 	extLinks: [
+	// 		{
+	// 			name: "Replit",
+	// 			href: "https://replit.com/@androsoa3/quiz-time",
+	// 			title: "Replit source code",
+	// 			icon: "/replit-gray.svg",
+	// 		},
+	// 		{
+	// 			name: "Github",
+	// 			href: "https://github.com/androso/quiz-app",
+	// 			title: "Github source code",
+	// 			icon: faGithub,
+	// 		},
+	// 		{
+	// 			name: "Live Demo",
+	// 			href: "https://quiz-time.androsoa3.repl.co/",
+	// 			title: "Live Demo",
+	// 			icon: faExternalLinkAlt,
+	// 		},
+	// 	],
+	// },
+	// {
+	// 	title: "Hangman",
+	// 	img: {
+	// 		href: "https://hangman.androsoa3.repl.co/",
+	// 		title: "Live Demo",
+	// 		src: "/hangman-cover.png",
+	// 		alt: "Hangman preview",
+	// 	},
+	// 	description:
+	// 		"The classic Hangman game, now on browsers with keyboard support and sounds effect, built using react and the canvas API :)",
+	// 	stack: ["React JS", "CSS", "Canva Api", "Vite.js", "Replit"],
+	// 	extLinks: [
+	// 		{
+	// 			name: "Replit",
+	// 			href: "https://replit.com/@androsoa3/hangman",
+	// 			title: "Replit source code",
+	// 			icon: "/replit-gray.svg",
+	// 		},
+	// 		{
+	// 			name: "Github",
+	// 			href: "https://github.com/androso/hangman",
+	// 			title: "Github source code",
+	// 			icon: faGithub,
+	// 		},
+	// 		{
+	// 			name: "Live Demo",
+	// 			href: "https://hangman.androsoa3.repl.co/",
+	// 			title: "Live Demo",
+	// 			icon: faExternalLinkAlt,
+	// 		},
+	// 	],
+	// },
 ];
 
 export default function Projects() {

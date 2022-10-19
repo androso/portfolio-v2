@@ -59,12 +59,28 @@ const stackItems = [
 			alt: "Express.js logo",
 		},
 	},
+	// {
+	// 	name: "Firebase",
+	// 	img: {
+	// 		title: "Firebase",
+	// 		src: "/firebase-svgrepo-com.svg",
+	// 		alt: "Firebase logo",
+	// 	},
+	// },
 	{
-		name: "Firebase",
+		name: "Postgres",
 		img: {
-			title: "Firebase icon",
-			src: "/firebase-svgrepo-com.svg",
-			alt: "Firebase logo",
+			title: "Postgresql",
+			src: "/Postgresql_elephant.svg",
+			alt: "Postgres logo",
+		},
+	},
+	{
+		name: "Typeorm",
+		img: {
+			title: "Typeorm ORM",
+			src: "/typeorm.svg",
+			alt: "Typeorm logo",
 		},
 	},
 	{
@@ -93,13 +109,15 @@ export default function Stack() {
 				<ul className="about__stack">
 					{stackItems.map((itemData) => (
 						<li key={itemData.name} className="about__stack__item">
-							<Image
-								src={itemData.img.src}
-								alt={itemData.img.alt}
-								title={itemData.img.title}
-								width="72"
-								height="72"
-							/>
+							<span style={{ width: "72px", height: "72px", margin: "auto" }}>
+								<Image
+									src={itemData.img.src}
+									alt={itemData.img.alt}
+									title={itemData.img.title}
+									width="72"
+									height="72"
+								/>
+							</span>
 							<span className="item__name">{itemData.name}</span>
 						</li>
 					))}
